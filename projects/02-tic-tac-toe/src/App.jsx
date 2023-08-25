@@ -29,8 +29,8 @@ function App() {
     setWinner(null);
 
     //Para que cuando se resetee el tablero, se borre el localstorage
-    window.localStorage.removeItem('board');
-    window.localStorage.removeItem('turn');
+    window.localStorage.removeItem("board");
+    window.localStorage.removeItem("turn");
   };
 
   const updateBoard = (index) => {
