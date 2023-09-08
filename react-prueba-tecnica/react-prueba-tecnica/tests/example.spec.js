@@ -14,5 +14,5 @@ test('app shows random fact and image', async ({ page }) => {
   const imageSrc = await image.getAttribute('src')
 
   await expect(textContent?.length).toBeGreaterThan(0)
-  await expect(imageSrc?.startsWith('CAT_PREFIX_IMAGE_URL')).toBeTruthy()
+  await expect(imageSrc?.startsWith(CAT_PREFIX_IMAGE_URL)).toBeTruthy()
 })
